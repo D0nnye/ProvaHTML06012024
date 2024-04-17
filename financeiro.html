@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro - Técnico, Pedro Salgadinho.</title>
+    <link rel="stylesheet" href="financeiro.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Financeiro</a>
+            </li>
+            <li>
+                <a href="#">Usuario</a>
+                <ul>
+                    <li>
+                        <a href="/login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="/inscricao.html">Inscrição</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="financeiro-container">
+        <h1>Acerte suas contas com a equipe do técnico, Pedro Salgadinho.</h1>
+
+        <p>Informe seus dados e vamos te encaminhar os detalhes financeiros no seu e-mail para sua segurança.</p>
+        <form action="/" method="post">
+
+            <label for="responsavel">Nome do responsavel:</label>
+            <input type="text" id="txtNomeResponsavel" name="responsavelNome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="txtEmail" name="email" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="txtCPF" name="CPF" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="txtSenha" name="senha" required>
+
+
+            <p>Como você gostaria de pagar suas contas? Aqui no Salgadinho técnico nós temos diversas opções:</p>
+
+            <label for="pagamento">Metodo de pagamento:</label>
+            <div class="pag">
+                <label for="pix"><input type="radio" id="pix" name="pagamento" required>PIX/QrCode</label><br>
+                <label for="credito"><input type="radio" id="credito" name="pagamento" required>Crédito</label><br>
+                <label for="debito"><input type="radio" id="debito" name="pagamento" required>Débito</label><br>
+            </div>
+
+            <button class="btn-confirmar" type="submit" id="btnConfirmar"><a href="/index.html">Confirmar</a></button>
+
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
